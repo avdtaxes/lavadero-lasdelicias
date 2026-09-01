@@ -68,10 +68,10 @@ export function TelegramSection() {
                     <Send className="size-10 text-aqua" aria-hidden />
                   </div>
                   <div className="rounded-2xl rounded-tl-sm bg-deep-foreground/10 p-4 text-sm text-deep-foreground/90">
-                    ✅ Tu reserva de las 10:30 AM fue confirmada.
+                    Tu reserva de las 10:30 AM fue confirmada.
                   </div>
                   <div className="rounded-2xl rounded-tl-sm bg-deep-foreground/10 p-4 text-sm text-deep-foreground/90">
-                    🎁 ¡Llevas 3 de 4 lavadas! Te falta una para tu lavada gratis.
+                    ¡Llevas 3 de 4 lavadas! Te falta una para tu lavada gratis.
                   </div>
                   <div className="rounded-2xl rounded-tr-sm bg-aqua/25 p-4 text-sm text-deep-foreground">
                     ¿Tienen cupo mañana a las 9:00?

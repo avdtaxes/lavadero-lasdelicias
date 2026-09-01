@@ -44,7 +44,9 @@ export function PromotionSection() {
                   4 LAVADAS
                 </span>
                 <ArrowDown className="size-6 text-aqua float-soft" aria-hidden />
-                <span className="text-4xl" role="img" aria-label="regalo">🎁</span>
+                <span className="flex size-14 items-center justify-center rounded-2xl bg-highlight/20">
+                  <Gift className="size-8 text-highlight" aria-hidden />
+                </span>
                 <span className="rounded-2xl bg-success px-6 py-3 font-display text-2xl font-extrabold tracking-wide text-success-foreground">
                   1 LAVADA GRATIS
                 </span>
