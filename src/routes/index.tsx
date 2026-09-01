@@ -1,24 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/landing/Header";
+import { Hero } from "@/components/landing/Hero";
+import { PromotionSection } from "@/components/landing/PromotionSection";
+import { PricingSection } from "@/components/landing/PricingSection";
+import { TelegramSection } from "@/components/landing/TelegramSection";
+import { AvailabilitySection } from "@/components/landing/AvailabilitySection";
+import { CustomerSection } from "@/components/landing/CustomerSection";
+import { InfoSection } from "@/components/landing/InfoSection";
+import { Footer, WhatsAppButton } from "@/components/landing/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const TITLE = "Las Delicias | Lavadero de Autos en San Juan del Cesar";
+const DESCRIPTION =
+  "Lava tu vehículo en Las Delicias, San Juan del Cesar. Consulta nuestros servicios, precios, horarios y participa en la promoción: 4 lavadas en 30 días y recibe 1 gratis.";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "es_CO" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: TITLE },
+      { name: "twitter:description", content: DESCRIPTION },
+    ],
+  }),
+  component: LandingPage,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function LandingPage() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <PromotionSection />
+        <PricingSection />
+        <TelegramSection />
+        <AvailabilitySection />
+        <CustomerSection />
+        <InfoSection />
+      </main>
+      <Footer />
+      <WhatsAppButton />
+    </>
   );
 }
