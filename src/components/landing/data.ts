@@ -8,9 +8,9 @@ export const BUSINESS = {
   tagline: "Lavadero de Autos",
   city: "San Juan del Cesar, La Guajira",
   country: "Colombia",
-  whatsapp: "573001112233", // TODO: número real
-  whatsappUrl: "https://wa.me/573001112233?text=Hola%20Las%20Delicias%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n",
-  telegramUrl: "https://t.me/lasdeliciaslavadero", // TODO: grupo real
+  whatsapp: "573043656927", // TODO: número real
+  whatsappUrl: "https://wa.me/573043656927?text=Hola%20Las%20Delicias%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n",
+  telegramUrl: "https://t.me/+lUkbpyXv5HowY2Yx", // TODO: grupo real
   schedule: { label: "Todos los días", hours: "8:00 AM — 4:00 PM", capacity: 2, intervalMinutes: 30 },
 };
 
